@@ -53,7 +53,7 @@ Números, perfis e notícias têm fonte junto ao conteúdo e em `docs/fontes-e-r
 
 ## Publicação, URL e GitHub
 
-**URL HTTPS publicada:** ainda não configurada — o site ainda não foi publicado.  
+**URL HTTPS publicada:** https://g7373hsh-glitch.github.io/Trabalho-AdaptSport/  
 **Repositório GitHub:** https://github.com/g7373hsh-glitch/Trabalho-AdaptSport  
 
 O repositório informado pela equipe é `https://github.com/g7373hsh-glitch/Trabalho-AdaptSport`. A publicação HTTPS, os commits reais de cada integrante e o pull request ainda precisam ser confirmados. As instruções de publicação estão em `docs/guia-publicacao-github-pages.md`; custos e comparação estão em `docs/orcamento-hospedagem.md`. Os arquivos `url-site.txt` e `repositorio.txt` na raiz registram esses campos sem inventar endereços.
