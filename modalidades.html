@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conheça oito modalidades paralímpicas e adaptadas, com uma busca simples e informações básicas sobre cada esporte.">
+  <meta name="theme-color" content="#0B6E4F">
+  <title>Modalidades paralímpicas | AdaptSport</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/a11y.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+<div class="a11y-bar" role="group" aria-label="Controles de acessibilidade"><div class="container a11y-bar__inner"><span class="a11y-bar__label">Acessibilidade</span><div class="a11y-bar__controls"><button type="button" id="btn-fonte" aria-pressed="false">Aumentar tamanho do texto</button><button type="button" id="btn-contraste" aria-pressed="false">Alto contraste</button></div></div></div>
+<header class="site-header">
+  <div class="container header-top">
+    <a class="logo" href="index.html" aria-label="AdaptSport — página inicial"><svg class="logo__mark" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="2"/><path d="M10 26 17 17l5 5 8-10" stroke="#FF6B35" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="30" cy="12" r="3" fill="#FF6B35"/></svg><span>Adapt<span class="accent-word">Sport</span></span></a>
+    <span class="nav-note">Esporte adaptado · informação e participação</span>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-controls="nav-menu" aria-expanded="true">Menu</button>
+  </div>
+  <nav class="main-nav container" id="nav-menu" aria-label="Navegação principal"><ul><li><a href="index.html">Início</a></li>
+        <li><a href="modalidades.html" aria-current="page">Modalidades</a></li>
+        <li><a href="esporte-adaptado.html">O que é</a></li>
+        <li><a href="atletas.html">Atletas</a></li>
+        <li><a href="beneficios-saude.html">Saúde</a></li>
+        <li><a href="onde-praticar.html">Onde praticar</a></li>
+        <li><a href="acessibilidade.html">Acessibilidade</a></li>
+        <li><a href="depoimentos.html">Depoimentos e mídia</a></li>
+        <li><a href="envolva-se.html">Como se envolver</a></li>
+        <li><a href="contato.html">Contato</a></li></ul></nav>
+</header>
+<main id="conteudo" tabindex="-1">
+
+<section class="page-hero" aria-labelledby="titulo-pagina"><div class="container"><p class="eyebrow">Página 2 · catálogo esportivo</p><h1 id="titulo-pagina">Modalidades paralímpicas e esporte adaptado</h1><p class="lead">Cada modalidade tem regras e recursos próprios. Este panorama apresenta oito esportes; para regras atualizadas e classificação, consulte as entidades oficiais.</p></div></section>
+<section class="section" aria-labelledby="catalogo-titulo"><div class="container">
+  <div class="section__head"><h2 id="catalogo-titulo">Encontre uma modalidade</h2><p>Use a busca por nome, tipo ou característica. O filtro é opcional e funciona com teclado.</p></div>
+  <div class="filter-bar"><label for="busca-modalidade">Filtrar modalidades</label><input id="busca-modalidade" type="search" placeholder="Ex.: piscina, quadra, goalball" aria-controls="lista-modalidades"><p id="resultado-modalidades" role="status" aria-live="polite">8 modalidades exibidas.</p></div>
+  <ul class="sport-list" id="lista-modalidades">
+    <li class="sport-card" data-modalidade="para-atletismo corrida salto arremesso pista"><span class="sport-icon" aria-hidden="true">01</span><div><h3>Para-atletismo</h3><p>Provas de pista e campo, incluindo corrida, salto e arremesso, com classes esportivas distintas.</p><ul class="chips"><li>Individual</li><li>Pista e campo</li><li>Classes esportivas</li></ul></div></li>
+    <li class="sport-card" data-modalidade="basquete cadeira de rodas coletivo quadra"><span class="sport-icon" aria-hidden="true">02</span><div><h3>Basquete em cadeira de rodas</h3><p>Esporte coletivo em quadra, com cadeiras esportivas e classificação funcional.</p><ul class="chips"><li>Coletivo</li><li>Quadra</li><li>Cadeira esportiva</li></ul></div></li>
+    <li class="sport-card" data-modalidade="natação piscina água classes"><span class="sport-icon" aria-hidden="true">03</span><div><h3>Natação paralímpica</h3><p>Provas em piscina com adaptações de largada e orientação conforme a classe e a necessidade do atleta.</p><ul class="chips"><li>Piscina</li><li>Individual e revezamento</li><li>Classes S</li></ul></div></li>
+    <li class="sport-card" data-modalidade="goalball visual bola guizo quadra"><span class="sport-icon" aria-hidden="true">04</span><div><h3>Goalball</h3><p>Modalidade criada para pessoas com deficiência visual; a bola tem guizos e a orientação depende do som.</p><ul class="chips"><li>Deficiência visual</li><li>Quadra</li><li>Coletivo</li></ul></div></li>
+    <li class="sport-card" data-modalidade="bocha precisão calha cadeira"><span class="sport-icon" aria-hidden="true">05</span><div><h3>Bocha paralímpica</h3><p>Jogo de precisão que pode utilizar calha e assistência, conforme a classe esportiva e as regras.</p><ul class="chips"><li>Precisão</li><li>Indoor</li><li>Classes BC</li></ul></div></li>
+    <li class="sport-card" data-modalidade="rugby cadeira de rodas contato quadra"><span class="sport-icon" aria-hidden="true">06</span><div><h3>Rúgbi em cadeira de rodas</h3><p>Esporte coletivo de quadra com cadeiras específicas e regras de contato controlado.</p><ul class="chips"><li>Coletivo</li><li>Quadra</li><li>Cadeira esportiva</li></ul></div></li>
+    <li class="sport-card" data-modalidade="vôlei sentado voleibol rede quadra coletivo"><span class="sport-icon" aria-hidden="true">07</span><div><h3>Vôlei sentado</h3><p>Variação do voleibol com rede e dimensões adaptadas, disputada com os atletas em contato com o solo.</p><ul class="chips"><li>Coletivo</li><li>Quadra</li><li>Rede adaptada</li></ul></div></li>
+    <li class="sport-card" data-modalidade="para-ciclismo bicicleta tandem handbike estrada pista"><span class="sport-icon" aria-hidden="true">08</span><div><h3>Para-ciclismo</h3><p>Inclui bicicletas, handbikes e tandems, com configurações conforme a classe e a prova.</p><ul class="chips"><li>Estrada e pista</li><li>Individual e tandem</li><li>Equipamento adaptado</li></ul></div></li>
+  </ul>
+  <p class="source-note">Modalidades e nomenclaturas podem variar conforme a competição. Consulte a <a href="https://cpb.org.br/modalidades/">lista oficial de modalidades do CPB</a>.</p>
+</div></section>
+<aside class="ods-note container"><strong>ODS 3 e 10:</strong> ampliar informação sobre diferentes práticas ajuda a aproximar pessoas de opções de movimento e participação social, sem presumir que uma modalidade sirva para todas.</aside>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <section aria-labelledby="rodape-projeto"><h2 id="rodape-projeto">AdaptSport</h2><p>Projeto acadêmico de informação sobre esporte adaptado, saúde inclusiva e acessibilidade digital.</p><p class="footer-ods">ODS 3 · ODS 10 · ODS 11</p></section>
+    <nav aria-label="Navegação do rodapé"><h2>Navegação</h2><ul class="footer-nav"><li><a href="index.html">Início</a></li>
+          <li><a href="modalidades.html">Modalidades</a></li>
+          <li><a href="esporte-adaptado.html">O que é</a></li>
+          <li><a href="atletas.html">Atletas</a></li>
+          <li><a href="beneficios-saude.html">Saúde</a></li>
+          <li><a href="onde-praticar.html">Onde praticar</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="depoimentos.html">Depoimentos e mídia</a></li>
+          <li><a href="envolva-se.html">Como se envolver</a></li>
+          <li><a href="contato.html">Contato</a></li></ul></nav>
+    <section aria-labelledby="rodape-acessibilidade"><h2 id="rodape-acessibilidade">Acessibilidade</h2><p>Link para pular conteúdo, foco visível, menu por teclado, fonte ajustável e alto contraste.</p><p><a href="acessibilidade.html">Conheça os recursos</a></p></section>
+  </div>
+  <div class="container footer-bottom"><p>Material informativo e acadêmico. Fontes externas identificadas junto aos conteúdos; informações consultadas em 09/11/2026.</p><p><a href="docs/README.md">Documentação do projeto</a> · <a href="docs/fontes-e-referencias.md">Fontes e referências</a></p></div>
+</footer>
+</body>
+</html>

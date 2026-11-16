@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AdaptSport | Esporte Adaptado e Saúde Inclusiva</title>
+<meta name="description" content="AdaptSport é um projeto sobre esporte adaptado, saúde inclusiva e acessibilidade — modalidades paralímpicas, benefícios e como participar.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<div class="a11y-bar">
+  <div class="container">
+    <span class="a11y-bar__label">Acessibilidade:</span>
+    <div class="a11y-bar__controls">
+      <button type="button" id="btn-fonte" aria-pressed="false">A- Tamanho do texto A+</button>
+      <button type="button" id="btn-contraste" aria-pressed="false">Alto contraste</button>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html">
+      <svg class="logo__mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="2"/>
+        <path d="M10 26 L17 17 L22 22 L30 12" stroke="#FF6B35" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="30" cy="12" r="3" fill="#FF6B35"/>
+      </svg>
+      Adapt<span class="accent-word">Sport</span>
+    </a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="modalidades.html">Modalidades</a></li>
+      </ul>
+    </nav>
+    <span class="nav-note">MVP — mais 8 páginas no escopo do projeto</span>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="hero">
+    <div class="container">
+      <div>
+        <span class="hero__eyebrow">Sustentabilidade social · Inclusão</span>
+        <h1>Esporte adaptado é saúde, é inclusão, é pertencimento.</h1>
+        <p class="lead">O AdaptSport reúne informação sobre modalidades paralímpicas, benefícios para a saúde e caminhos de acesso ao esporte adaptado no Brasil — em um site pensado para ser lido, ouvido e navegado por qualquer pessoa.</p>
+        <div class="hero__actions">
+          <a class="btn btn-primary" href="modalidades.html">Ver modalidades</a>
+          <a class="btn btn-outline" href="#sobre">O que é esporte adaptado</a>
+        </div>
+      </div>
+      <svg class="hero__art" viewBox="0 0 420 340" role="img" aria-labelledby="heroArtTitle">
+        <title id="heroArtTitle">Ilustração de uma pessoa em cadeira de rodas de corrida em movimento, com linhas de velocidade</title>
+        <path d="M0 300 H420" stroke="#0B6E4F" stroke-opacity="0.15" stroke-width="2"/>
+        <line x1="40" y1="230" x2="140" y2="230" stroke="#FF6B35" stroke-width="6" stroke-linecap="round"/>
+        <line x1="60" y1="255" x2="150" y2="255" stroke="#FF6B35" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+        <line x1="20" y1="205" x2="110" y2="205" stroke="#FF6B35" stroke-width="6" stroke-linecap="round" opacity="0.35"/>
+        <circle cx="230" cy="255" r="62" fill="none" stroke="#0B6E4F" stroke-width="10"/>
+        <circle cx="230" cy="255" r="10" fill="#0B6E4F"/>
+        <path d="M230 205 L230 170 L275 150" stroke="#12211C" stroke-width="9" stroke-linecap="round" fill="none"/>
+        <circle cx="278" cy="146" r="15" fill="#12211C"/>
+        <path d="M230 205 L275 205" stroke="#12211C" stroke-width="9" stroke-linecap="round"/>
+        <path d="M285 255 L310 255" stroke="#0B6E4F" stroke-width="8" stroke-linecap="round"/>
+        <circle cx="322" cy="255" r="14" fill="none" stroke="#0B6E4F" stroke-width="7"/>
+      </svg>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="stats">
+      <div class="stat"><strong>24</strong><span>modalidades paralímpicas reconhecidas oficialmente</span></div>
+      <div class="stat"><strong>+400</strong><span>atletas brasileiros em atividade em clubes e núcleos</span></div>
+      <div class="stat"><strong>3 em cada 4</strong><span>brasileiros com deficiência nunca praticaram esporte</span></div>
+    </div>
+  </div>
+
+  <section class="section" id="sobre">
+    <div class="container">
+      <div class="section__head">
+        <h2>O que é esporte adaptado?</h2>
+        <p>É a prática esportiva ajustada às capacidades de pessoas com deficiência física, visual, auditiva ou intelectual — por meio de regras adaptadas, equipamentos específicos ou modalidades criadas especialmente para isso, como o goalball e a bocha.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <svg class="card__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="3"/><path d="M24 14v14l9 5" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          <span class="tag">Saúde</span>
+          <h3>Benefícios físicos e mentais</h3>
+          <p>Reduz sedentarismo, fortalece autonomia e é reconhecido como ferramenta de reabilitação e bem-estar emocional.</p>
+        </article>
+        <article class="card">
+          <svg class="card__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M8 40c4-10 12-14 16-14s12 4 16 14" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="24" cy="14" r="6" stroke="currentColor" stroke-width="3"/></svg>
+          <span class="tag">Inclusão</span>
+          <h3>Pertencimento social</h3>
+          <p>Cria comunidade, combate o isolamento e amplia a representatividade de pessoas com deficiência no esporte e na mídia.</p>
+        </article>
+        <article class="card">
+          <svg class="card__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="8" y="8" width="32" height="32" rx="6" stroke="currentColor" stroke-width="3"/><path d="M16 24h16M24 16v16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          <span class="tag">Acessibilidade</span>
+          <h3>Estrutura acessível</h3>
+          <p>Depende de quadras, transporte e equipamentos adaptados — parte do que este projeto também mapeia e divulga.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>Como o site está estruturado</h2>
+        <p>Este MVP entrega as duas primeiras páginas navegáveis. As demais fazem parte do escopo completo do projeto.</p>
+      </div>
+      <ul class="roadmap">
+        <li class="is-live"><span class="n">01</span>Início</li>
+        <li class="is-live"><span class="n">02</span>Modalidades paralímpicas</li>
+        <li><span class="n">03</span>O que é esporte adaptado</li>
+        <li><span class="n">04</span>Atletas em destaque</li>
+        <li><span class="n">05</span>Benefícios p/ saúde</li>
+        <li><span class="n">06</span>Onde praticar</li>
+        <li><span class="n">07</span>Acessibilidade nos espaços</li>
+        <li><span class="n">08</span>Depoimentos</li>
+        <li><span class="n">09</span>Como se envolver</li>
+        <li><span class="n">10</span>Contato</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta-strip">
+    <div class="container">
+      <div>
+        <h2>Quer conhecer as modalidades paralímpicas?</h2>
+        <p>Explore a segunda página do MVP com ícones, categorias e classificação de cada esporte.</p>
+      </div>
+      <a class="btn btn-accent" href="modalidades.html">Ver modalidades →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>AdaptSport</h4>
+        <p>Projeto acadêmico sobre esporte adaptado, saúde inclusiva e acessibilidade digital.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="modalidades.html">Modalidades</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Acessibilidade</h4>
+        <ul>
+          <li>Navegação por teclado</li>
+          <li>Alto contraste disponível</li>
+          <li>Texto ajustável</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">MVP desenvolvido para fins educacionais — entrega 1 do projeto.</p>
+  </div>
+</footer>
+
+<script src="assets/a11y.js"></script>
+</body>
+</html>

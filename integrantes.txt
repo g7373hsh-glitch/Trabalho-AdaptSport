@@ -1,0 +1,8 @@
+Equipe AdaptSport — Desenvolvimento Front-end — 2ª entrega
+Data da versão do projeto: 16/11/2026
+
+1. Emily Mayara Matos Moreira — RA: 47323523 — conteúdo e pesquisa
+2. Kauã Gomes Da Silva — RA: 47262265 — HTML e páginas
+3. Lucas Gabriel Roman Martins — RA: 46487618 — testes e acessibilidade
+4. Lucas Ramon Bezerra Gomes — RA: 47766362 — CSS e responsividade
+5. Gabriel Arnaldo Da Silva — RA: 47480441 — documentação e apresentação

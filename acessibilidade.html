@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Checklist de acessibilidade física, comunicacional e digital para espaços esportivos inclusivos.">
+  <meta name="theme-color" content="#0B6E4F">
+  <title>Acessibilidade nos espaços esportivos | AdaptSport</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/a11y.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+<div class="a11y-bar" role="group" aria-label="Controles de acessibilidade"><div class="container a11y-bar__inner"><span class="a11y-bar__label">Acessibilidade</span><div class="a11y-bar__controls"><button type="button" id="btn-fonte" aria-pressed="false">Aumentar tamanho do texto</button><button type="button" id="btn-contraste" aria-pressed="false">Alto contraste</button></div></div></div>
+<header class="site-header">
+  <div class="container header-top">
+    <a class="logo" href="index.html" aria-label="AdaptSport — página inicial"><svg class="logo__mark" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="2"/><path d="M10 26 17 17l5 5 8-10" stroke="#FF6B35" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="30" cy="12" r="3" fill="#FF6B35"/></svg><span>Adapt<span class="accent-word">Sport</span></span></a>
+    <span class="nav-note">Esporte adaptado · informação e participação</span>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-controls="nav-menu" aria-expanded="true">Menu</button>
+  </div>
+  <nav class="main-nav container" id="nav-menu" aria-label="Navegação principal"><ul><li><a href="index.html">Início</a></li>
+        <li><a href="modalidades.html">Modalidades</a></li>
+        <li><a href="esporte-adaptado.html">O que é</a></li>
+        <li><a href="atletas.html">Atletas</a></li>
+        <li><a href="beneficios-saude.html">Saúde</a></li>
+        <li><a href="onde-praticar.html">Onde praticar</a></li>
+        <li><a href="acessibilidade.html" aria-current="page">Acessibilidade</a></li>
+        <li><a href="depoimentos.html">Depoimentos e mídia</a></li>
+        <li><a href="envolva-se.html">Como se envolver</a></li>
+        <li><a href="contato.html">Contato</a></li></ul></nav>
+</header>
+<main id="conteudo" tabindex="-1">
+
+<section class="page-hero" aria-labelledby="titulo-pagina"><div class="container"><p class="eyebrow">Página 7 · acesso e autonomia</p><h1 id="titulo-pagina">Acessibilidade nos espaços esportivos</h1><p class="lead">A acessibilidade não é um recurso isolado. Ela acompanha o caminho desde a informação e o transporte até a entrada, a prática e a saída do espaço.</p></div></section>
+<section class="section" aria-labelledby="espaco-titulo"><div class="container"><div class="section__head"><h2 id="espaco-titulo">Checklist para conversar com o local</h2><p>Use as perguntas como ponto de partida. A necessidade e a solução devem ser combinadas com a pessoa que vai praticar.</p></div><div class="check-grid"><article class="check-card"><h3>Chegada e circulação</h3><ul><li>O trajeto desde o transporte tem rota sem degraus?</li><li>Há áreas de circulação e portas compatíveis com diferentes apoios?</li><li>O acesso a vestiários e quadras está sinalizado?</li></ul></article><article class="check-card"><h3>Comunicação</h3><ul><li>Informações podem ser recebidas em texto e áudio?</li><li>Há recursos visuais e sonoros para instruções e partidas?</li><li>Como são solicitados intérpretes ou outros apoios?</li></ul></article><article class="check-card"><h3>Prática e equipamentos</h3><ul><li>Existem equipamentos adaptados ou possibilidade de empréstimo?</li><li>Quem explica as regras e combinações de segurança?</li><li>É possível conhecer o espaço antes da primeira atividade?</li></ul></article></div></div></section>
+<section class="section section--alt" aria-labelledby="site-titulo"><div class="container"><div class="section__head"><h2 id="site-titulo">Acessibilidade digital aplicada ao AdaptSport</h2><p>O projeto usa linguagem declarada em português brasileiro, landmarks semânticos, link para pular conteúdo, títulos em ordem, foco visível, formulários rotulados, mensagens de estado e controles de fonte/contraste.</p></div><ul class="feature-list"><li>As imagens informativas recebem alternativa textual; ícones decorativos são ocultados da tecnologia assistiva.</li><li>O menu móvel pode ser aberto e fechado por teclado e informa seu estado.</li><li>O conteúdo reorganiza-se em telas menores, sem depender somente de cor para transmitir informação.</li><li>A qualidade percebida pode variar por dispositivo e tecnologia assistiva; reporte barreiras pela página de contato.</li></ul><p class="source-note">A acessibilidade do código deve ser avaliada por pessoas e ferramentas. Consulte <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">as diretrizes WCAG do W3C</a>.</p></div></section>
+<aside class="ods-note container"><strong>ODS 10 e 11:</strong> acessibilidade digital e física é condição de participação em espaços públicos e comunitários.</aside>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <section aria-labelledby="rodape-projeto"><h2 id="rodape-projeto">AdaptSport</h2><p>Projeto acadêmico de informação sobre esporte adaptado, saúde inclusiva e acessibilidade digital.</p><p class="footer-ods">ODS 3 · ODS 10 · ODS 11</p></section>
+    <nav aria-label="Navegação do rodapé"><h2>Navegação</h2><ul class="footer-nav"><li><a href="index.html">Início</a></li>
+          <li><a href="modalidades.html">Modalidades</a></li>
+          <li><a href="esporte-adaptado.html">O que é</a></li>
+          <li><a href="atletas.html">Atletas</a></li>
+          <li><a href="beneficios-saude.html">Saúde</a></li>
+          <li><a href="onde-praticar.html">Onde praticar</a></li>
+          <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          <li><a href="depoimentos.html">Depoimentos e mídia</a></li>
+          <li><a href="envolva-se.html">Como se envolver</a></li>
+          <li><a href="contato.html">Contato</a></li></ul></nav>
+    <section aria-labelledby="rodape-acessibilidade"><h2 id="rodape-acessibilidade">Acessibilidade</h2><p>Link para pular conteúdo, foco visível, menu por teclado, fonte ajustável e alto contraste.</p><p><a href="acessibilidade.html">Conheça os recursos</a></p></section>
+  </div>
+  <div class="container footer-bottom"><p>Material informativo e acadêmico. Fontes externas identificadas junto aos conteúdos; informações consultadas em 09/11/2026.</p><p><a href="docs/README.md">Documentação do projeto</a> · <a href="docs/fontes-e-referencias.md">Fontes e referências</a></p></div>
+</footer>
+</body>
+</html>

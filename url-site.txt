@@ -1,0 +1,2 @@
+URL pública HTTPS do AdaptSport: PENDENTE — o site ainda não foi publicado.
+Após ativar o GitHub Pages, substituir esta linha pela URL HTTPS confirmada.
