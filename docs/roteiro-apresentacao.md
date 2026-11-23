@@ -5,7 +5,7 @@
 **Professor:** Paulo Sergio Fratta Junior  
 **Data:** 16 de novembro de 2026  
 **Repositório:** https://github.com/g7373hsh-glitch/Trabalho-AdaptSport  
-**URL do site:** ainda pendente de publicação
+**URL do site:** https://g7373hsh-glitch.github.io/Trabalho-AdaptSport/
 
 > **Observação:** o enunciado pede 14 tópicos. Como a conta atual limita a apresentação a 12 lâminas, os tópicos 12/13/14 foram organizados em duas lâminas finais, mantendo todos os conteúdos obrigatórios.
 
@@ -31,7 +31,7 @@
 | 6 | Melhorias do MVP e correções realizadas | Lucas Gabriel |
 | 7 | JavaScript, validação, localStorage e testes | Lucas Gabriel |
 | 8 | Acessibilidade, WCAG, CSS e responsividade | Lucas Ramon |
-| 9 | GitHub, branch, pull request e deploy pendente | Lucas Ramon |
+| 9 | GitHub, branch, pull request e GitHub Pages publicado | Lucas Ramon |
 | 10 | Uso de IA, prompts, revisão humana e limites | Gabriel |
 | 11 | Orçamento, hospedagem e status dos objetivos | Gabriel |
 | 12 | Aprendizados, demonstração e perguntas | Gabriel, com participação de todos |
@@ -62,19 +62,19 @@ No JavaScript, deve explicar `preventDefault()`, mensagens de erro, `localStorag
 
 Lucas Ramon deve explicar o foco visível, o link para pular conteúdo, os rótulos dos campos, o contraste, a legenda do vídeo, a transcrição e o layout adaptado para celular.
 
-Também deve apresentar o repositório informado no GitHub e explicar que a equipe ainda precisa confirmar os commits reais de todos, criar uma branch, abrir um pull request e ativar o GitHub Pages. Não deve inventar uma URL do site antes da publicação.
+Também deve apresentar o repositório no GitHub e abrir o site publicado no GitHub Pages: https://g7373hsh-glitch.github.io/Trabalho-AdaptSport/. Deve explicar que os commits e o fluxo de revisão devem refletir o trabalho real da equipe, sem inventar autoria.
 
 ### Gabriel — IA, orçamento, resultados e encerramento
 
 Gabriel deve explicar que a IA foi usada como apoio à pesquisa, estruturação e revisão, mas que o site não possui uma API generativa. O guia rápido funciona por regras fixas e foi documentado para não fingir que existe um chatbot conectado.
 
-No orçamento, deve apresentar o GitHub Pages como opção recomendada para um site estático, com custo base zero quando elegível. Também deve explicar que a URL pública ainda está pendente.
+No orçamento, deve apresentar o GitHub Pages como a hospedagem usada pelo projeto, com custo base zero no cenário adotado. A URL pública confirmada é https://g7373hsh-glitch.github.io/Trabalho-AdaptSport/
 
 No encerramento, deve apresentar os objetivos alcançados, os itens ainda pendentes e os aprendizados. Depois, deve chamar a demonstração técnica e abrir para perguntas.
 
 ## Demonstração técnica de cinco minutos
 
-1. Emily abre a URL pública assim que ela for publicada e navega pela home.
+1. Emily abre a URL pública e navega pela home.
 2. Kauã mostra Modalidades e outra página pelo menu.
 3. Lucas Ramon reduz a janela para demonstrar o menu e o layout mobile.
 4. Lucas Gabriel envia o formulário vazio, mostra os erros e depois preenche os campos.
@@ -90,5 +90,5 @@ No encerramento, deve apresentar os objetivos alcançados, os itens ainda penden
 - Qual foi a principal melhoria em relação ao MVP?
 - Como uma pessoa cega pode navegar pelo formulário?
 - Por que o guia rápido não deve ser chamado de IA generativa?
-- O que ainda falta para o site estar completamente publicado?
+- O que ainda falta revisar ou ensaiar antes da apresentação, mesmo com o site publicado?
 - Como o CSS adapta o menu e os cartões para telas pequenas?

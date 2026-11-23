@@ -19,7 +19,7 @@ O site incorpora notícias externas atribuídas, fontes junto a estatísticas/pe
 - `scripts/build_pages.py`: gerador das dez páginas; editar conteúdo aqui e gerar de novo.
 - `scripts/build_media.py`: ferramenta de regeneração do áudio/vídeo, requer FFmpeg e Pillow.
 - `docs/`: escopo, fontes, orçamento, diário, plano de contexto, testes, antes/depois e passos de publicação.
-- `integrantes.txt`, `url-site.txt`, `repositorio.txt`: entregáveis textuais, com campos não fornecidos claramente pendentes.
+- `integrantes.txt`, `url-site.txt`, `repositorio.txt`: entregáveis textuais com os integrantes, a URL pública e o repositório confirmados.
 
 ## Design reutilizado
 
@@ -27,4 +27,4 @@ A identidade aprovada pelo MVP é mantida: estética esportiva editorial, verde 
 
 ## Dependências e entrega
 
-A aplicação não requer backend para navegar. A mídia é local, exceto o iframe do CPB e os links para fontes oficiais, que exigem Internet. O formulário não pode encaminhar contato sem integração com serviço/servidor e permanece explícito como demonstração. O deploy estático pode usar GitHub Pages, Netlify ou Vercel; GitHub Pages é a recomendação no orçamento por corresponder ao site e ao requisito de histórico Git, mas nenhuma publicação foi feita sem repo/conta. A versão entregue é o código e documentação locais, não uma URL pública.
+A aplicação não requer backend para navegar. A mídia é local, exceto o iframe do CPB e os links para fontes oficiais, que exigem Internet. O formulário não pode encaminhar contato sem integração com serviço/servidor e permanece explícito como demonstração. O deploy estático pode usar GitHub Pages, Netlify ou Vercel; esta versão está publicada no GitHub Pages em https://g7373hsh-glitch.github.io/Trabalho-AdaptSport/ e versionada em https://github.com/g7373hsh-glitch/Trabalho-AdaptSport. A aplicação continua sendo código estático e documentação, sem backend.

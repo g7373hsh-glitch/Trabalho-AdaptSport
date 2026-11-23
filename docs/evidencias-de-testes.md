@@ -1,6 +1,6 @@
 # Evidências e verificações
 
-**Versão verificada:** 09/11/2026. As verificações a seguir são locais; ainda não há URL pública nem repositório conectado.
+**Versão verificada:** 09/11/2026 para os testes locais; a versão atual está publicada em https://g7373hsh-glitch.github.io/Trabalho-AdaptSport/ e versionada em https://github.com/g7373hsh-glitch/Trabalho-AdaptSport.
 
 ## Validação HTML e recursos
 
@@ -27,8 +27,8 @@ Foram calculados por fórmula WCAG pares principais definidos em `assets/style.c
 - `docs/evidencias/mvp-original-desktop.png` e `mvp-original-celular.png`: home do MVP antes da mudança.
 - `docs/evidencias/mvp-original/`: cópia local preservada do HTML/CSS/JS original.
 
-As capturas PNG e o vídeo local podem apoiar uma demonstração se a Internet falhar; o site também pode ser aberto com `python3 -m http.server 8000`. Isso não substitui o requisito de URL pública HTTPS.
+As capturas PNG e o vídeo local podem apoiar uma demonstração se a Internet falhar; o site também pode ser aberto com `python3 -m http.server 8000`. A versão pública está disponível em https://g7373hsh-glitch.github.io/Trabalho-AdaptSport/.
 
 ## Revisões ainda necessárias
 
-A equipe deve testar fisicamente cada página em desktop/tablet/celular, teclado real, tecnologias assistivas e reprodução de mídia em mais navegadores. O roteiro pede navegação completa por teclado; o código tem foco visível, link de pular conteúdo e controles semânticos, mas o ensaio humano ainda precisa ser feito. Também faltam verificar a versão pública após deploy, os limites de hospedagem e os commits/PR reais.
+A equipe deve testar fisicamente cada página em desktop/tablet/celular, teclado real, tecnologias assistivas e reprodução de mídia em mais navegadores. O roteiro pede navegação completa por teclado; o código tem foco visível, link de pular conteúdo e controles semânticos, mas o ensaio humano ainda precisa ser feito. A versão pública já foi verificada; ainda é recomendável revisar os limites de hospedagem e manter os commits/PRs reais da equipe.

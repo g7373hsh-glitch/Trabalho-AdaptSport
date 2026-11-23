@@ -6,17 +6,17 @@
 
 | Provedor | Plano comparado | Custo de hospedagem | Adequação ao AdaptSport | Observações |
 | --- | --- | ---: | --- | --- |
-| GitHub Pages | Publicação de arquivos HTML/CSS/JS a partir de repositório | **US$ 0/mês** no cenário de repositório público/plano compatível | **Recomendado**: o projeto é estático, versionável e pode usar o subdomínio `github.io` com HTTPS. | Exige repositório GitHub e configuração de origem; nenhum repositório foi fornecido. Consultar limites e políticas oficiais. |
+| GitHub Pages | Publicação de arquivos HTML/CSS/JS a partir de repositório | **US$ 0/mês** no cenário de repositório público/plano compatível | **Utilizado**: o projeto estático está versionado e publicado com HTTPS. | URL confirmada: `https://g7373hsh-glitch.github.io/Trabalho-AdaptSport/`. Consultar limites e políticas oficiais. |
 | Netlify | Free | **US$ 0/mês** | Deploy por Git e domínio customizado com SSL; suficiente para demonstrar site estático se o uso ficar dentro do plano. | A página de preços informa limite de 300 créditos; recursos/deploys consomem créditos. Não considerar uso ilimitado. |
 | Vercel | Hobby | **US$ 0/mês** | Hospedagem estática com CDN e HTTPS automático; alternativa simples para projeto pessoal/acadêmico. | A página lista cotas mensais e limitações do plano Hobby; não usar como garantia de tráfego ilimitado. |
 
-**Recomendação:** GitHub Pages com URL padrão `usuario.github.io` ou `usuario.github.io/adaptsport`, porque o projeto não precisa de backend e a entrega exige demonstrar versionamento. O custo base de hospedagem é zero quando elegível. A recomendação depende de a equipe criar/conectar um repositório e confirmar as condições vigentes.
+**Status:** GitHub Pages foi utilizado com a URL `https://g7373hsh-glitch.github.io/Trabalho-AdaptSport/`. O projeto não precisa de backend e o custo base de hospedagem é zero no cenário adotado. A manutenção continua sujeita às condições vigentes do serviço.
 
 ## Candidatos de domínio
 
 | Candidato ilustrativo | Custo consultado | Registro/condição | Status |
 | --- | ---: | --- | --- |
-| `adaptsport.github.io` (subdomínio de plataforma) | **R$ 0/ano** | Disponibilidade depende do usuário/organização e do nome do repositório no GitHub. Não é domínio próprio. | Não verificado; requer conta e repo. |
+| `g7373hsh-glitch.github.io/Trabalho-AdaptSport/` | **R$ 0/ano** | Subdomínio de projeto do GitHub Pages; não é domínio próprio. | **Publicado e verificado.** |
 | `adaptsport.com.br` | **R$ 40/ano** | Valor publicado pelo Registro.br para registro de um ano em categorias usuais .br. | Disponibilidade não consultada e domínio não registrado. |
 | `adaptsport.org` | **Preço exibido na consulta** | O Cloudflare Registrar declara cobrança a preço de custo e mostra preços por extensão no seu buscador. | Cotação exata e disponibilidade não verificadas. |
 

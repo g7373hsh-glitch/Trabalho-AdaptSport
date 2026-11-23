@@ -28,7 +28,7 @@ A seção multimídia inclui narração sintética em português brasileiro, tra
 
 ## 09/11/2026 — Limites externos
 
-O ZIP original não continha repositório Git, URL, credenciais de publicação, RAs dos integrantes nem divisão de papéis. Nenhum GitHub, serviço de hospedagem, domínio, site público ou participação individual foi inventado. A documentação marca essas etapas como pendentes e fornece instruções para a equipe concluí-las.
+Na auditoria inicial, o ZIP original não continha repositório Git, URL, credenciais de publicação, RAs dos integrantes nem divisão de papéis. Nenhum dado foi inventado naquele momento. Posteriormente, a equipe conectou o repositório https://github.com/g7373hsh-glitch/Trabalho-AdaptSport e publicou o site em https://g7373hsh-glitch.github.io/Trabalho-AdaptSport/; a documentação foi atualizada para refletir o estado atual.
 
 A rubrica pede 14 slides, mas o limite de criação disponível nesta sessão é 12. A apresentação foi planejada com 12 slides que agrupam os 14 tópicos; o arquivo de apresentação deve informar essa condensação. A equipe pode complementar/editar o deck se precisar cumprir literalmente 14 lâminas.
 

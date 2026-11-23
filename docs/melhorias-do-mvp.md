@@ -12,7 +12,7 @@ O pacote recebido continha a home, a página de modalidades e o arquivo de escop
 | Não havia mídia de áudio/vídeo ou transcrição no MVP. | A página Depoimentos e mídia contém citações atribuídas ao CPB, narração, transcrição, vídeo com legenda e iframe oficial externo. |
 | Não havia as páginas de saúde, atletas, diretório, acessibilidade, depoimentos e participação. | As páginas foram criadas seguindo os títulos e funções definidos no `escopo-adaptsport.docx`. |
 | O escopo dizia que o JavaScript seria opcional no MVP, mas a entrega final exigia JavaScript obrigatório. | A implementação final usa arquivos `.js` externos e documenta cada interação. |
-| O pacote recebido não continha histórico Git, URL publicada, feedback do professor, RA ou divisão de papéis. | A documentação e arquivos `.txt` registram essas lacunas. Nenhum commit, deploy, RA, papel ou resultado de avaliação foi fabricado. |
+| O pacote recebido não continha histórico Git, URL publicada, feedback do professor, RA ou divisão de papéis. | Naquele momento, a documentação registrava essas lacunas sem fabricar informações. Depois, o projeto foi versionado no GitHub e publicado em https://g7373hsh-glitch.github.io/Trabalho-AdaptSport/; os RAs e papéis confirmados também foram registrados. |
 
 ## Evidências
 

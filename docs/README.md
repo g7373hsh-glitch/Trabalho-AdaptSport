@@ -56,7 +56,7 @@ Números, perfis e notícias têm fonte junto ao conteúdo e em `docs/fontes-e-r
 **URL HTTPS publicada:** https://g7373hsh-glitch.github.io/Trabalho-AdaptSport/  
 **Repositório GitHub:** https://github.com/g7373hsh-glitch/Trabalho-AdaptSport  
 
-O repositório informado pela equipe é `https://github.com/g7373hsh-glitch/Trabalho-AdaptSport`. A publicação HTTPS, os commits reais de cada integrante e o pull request ainda precisam ser confirmados. As instruções de publicação estão em `docs/guia-publicacao-github-pages.md`; custos e comparação estão em `docs/orcamento-hospedagem.md`. Os arquivos `url-site.txt` e `repositorio.txt` na raiz registram esses campos sem inventar endereços.
+O repositório informado pela equipe é `https://github.com/g7373hsh-glitch/Trabalho-AdaptSport` e a publicação HTTPS está disponível em `https://g7373hsh-glitch.github.io/Trabalho-AdaptSport/`. Os commits e o fluxo de revisão devem refletir o trabalho real da equipe. As instruções de manutenção estão em `docs/guia-publicacao-github-pages.md`; custos e comparação estão em `docs/orcamento-hospedagem.md`. Os arquivos `url-site.txt` e `repositorio.txt` na raiz registram os endereços confirmados.
 
 ## Integrantes, RAs e papéis
 
@@ -64,7 +64,7 @@ A equipe confirmada nesta versão é composta por cinco integrantes: Emily Mayar
 
 ## Arquivos de documentação
 
-- `apresentacao-adaptsport.pdf` e `apresentacao-adaptsport.pptx` (na raiz do projeto) — deck da Atividade 2, com 12 lâminas cobrindo os 14 tópicos do roteiro.
+- `AdaptSport_Apresentação.pptx` (na raiz do projeto) — deck da Atividade 2, com 12 lâminas cobrindo os 14 tópicos do roteiro.
 - `docs/roteiro-apresentacao.md` — divisão dos tópicos entre os slides, tempo e roteiro da demonstração.
 - `docs/escopo-adaptsport.md` — objetivos, requisitos e status planejado × entregue.
 - `docs/diario-de-bordo.md` — registro datado de decisões, uso de IA e ajustes.
@@ -73,6 +73,6 @@ A equipe confirmada nesta versão é composta por cinco integrantes: Emily Mayar
 - `docs/evidencias-de-testes.md` — testes e verificações executados, com limites conhecidos.
 - `docs/melhorias-do-mvp.md` — antes e depois, sem inventar comentários do professor.
 - `docs/plano-contexto-ia.md` — limites e fontes para um futuro assistente generativo.
-- `docs/guia-publicacao-github-pages.md` — passos para versionar e publicar após definir a conta/repositorio.
+- `docs/guia-publicacao-github-pages.md` — manutenção, verificação e futuras atualizações do GitHub Pages.
 - `docs/fontes-e-referencias.md` — referências consultadas.
 - `docs/evidencias/` — capturas de tela e cópia do MVP original.
