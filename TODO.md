@@ -16,7 +16,7 @@
 - [x] **Objetivos e critérios de aceitação:** quadro planejado × entregue na apresentação (lâmina 11) e no escopo.
 - [x] **Uso de IA documentado:** diário de bordo, plano de contexto e revisão humana registrada.
 - [x] **Melhorias desde o MVP:** comparação com capturas do antes e depois em `docs/melhorias-do-mvp.md`.
-- [ ] **GitHub com commits de todos e pull request:** repositório informado; histórico, branch e PR ainda precisam ser criados.
+- [ ] **GitHub com commits de todos e pull request:** o repositório e o histórico existem; ainda pode ser criado um pull request para demonstrar o fluxo de revisão da equipe.
 - [x] **Documentação em `/docs`:** README, diário, escopo, orçamento, testes, fontes, melhorias e plano de IA.
 - [x] **Temática e ODS:** ODS 3, 10 e 11 presentes nas dez páginas, com fontes junto ao conteúdo.
 - [x] **Apresentação:** 12 lâminas cobrindo os 14 tópicos do roteiro, com notas de fala por integrante e texto legível.
@@ -29,7 +29,7 @@
 - [x] `integrantes.txt` com os cinco nomes, RAs e papéis confirmados.
 - [x] `repositorio.txt` com o endereço informado pela equipe.
 - [x] `url-site.txt` atualizado com a URL pública confirmada.
-- [x] `apresentacao-adaptsport.pptx` e `apresentacao-adaptsport.pdf` atualizados.
+- [x] `AdaptSport_Apresentação.pptx` atualizado.
 - [x] `docs/roteiro-apresentacao.md` com a divisão de falas por integrante.
 - [x] Capturas de interface em `docs/evidencias/`.
 - [x] ZIP final gerado com a versão comentada entregue localmente.

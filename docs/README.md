@@ -4,7 +4,7 @@
 **Projeto:** AdaptSport — Esporte Adaptado e Saúde Inclusiva  
 **Equipe:** Emily Mayara Matos Moreira; Kauã Gomes Da Silva; Lucas Gabriel Roman Martins; Lucas Ramon Bezerra Gomes; Gabriel Arnaldo Da Silva.  
 **Data da versão:** 16/11/2026.  
-**Professor informado no escopo:** Paulo Fratta.
+**Professor:** Paulo Sergio Fratta Junior.
 
 ## Objetivo
 
@@ -37,7 +37,7 @@ python3 -m http.server 8000
 
 Depois abra `http://localhost:8000`. Não há framework, dependência de banco de dados nem pacote JavaScript externo.
 
-As dez páginas HTML são geradas por `scripts/build_pages.py`, que contém o conteúdo e o menu compartilhado. Execute `python3 scripts/build_pages.py` após editar esse arquivo. O áudio-base `assets/guia-esporte-adaptado.wav`, as ferramentas FFmpeg e Pillow são usados por `scripts/build_media.py` para reconstruir os arquivos em `assets/media/`.
+As páginas-base são geradas por `scripts/build_pages.py`, que contém o conteúdo e o menu compartilhado. `modalidades.html` possui uma melhoria interativa manual — diálogo de detalhes, links e `assets/modalidades.js` — e não deve ser regenerada pelo script sem incorporar essa melhoria. O áudio-base `assets/guia-esporte-adaptado.wav`, as ferramentas FFmpeg e Pillow são usados por `scripts/build_media.py` para reconstruir os arquivos em `assets/media/`.
 
 ## JavaScript e dados
 

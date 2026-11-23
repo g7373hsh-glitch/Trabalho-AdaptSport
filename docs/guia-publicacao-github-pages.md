@@ -15,4 +15,4 @@ Os passos abaixo servem para manutenção, conferência e futuras atualizações
 4. Navegar pelas dez páginas e conferir recursos, links, vídeo local e formulário. A função do formulário permanece local e não envia mensagens.
 5. Atualizar `repositorio.txt`, README, slides e documentação somente com URLs reais.
 
-A página oficial do GitHub Pages descreve a publicação de arquivos HTML, CSS e JavaScript diretamente do repositório e informa os formatos de site de usuário/organização e de projeto. Verifique limites e condições atualizados na fonte oficial antes de publicar.
+A página oficial do GitHub Pages descreve a publicação de arquivos HTML, CSS e JavaScript diretamente do repositório e informa os formatos de site de usuário/organização e de projeto. Verifique limites e condições atualizados na fonte oficial antes de futuras alterações de hospedagem.

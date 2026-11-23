@@ -2,7 +2,7 @@
 
 ## Objetivo e implementação
 
-Continuar o projeto recebido em HTML5/CSS3/JavaScript puros, sem framework e sem backend. Manter a marca AdaptSport, a paleta verde/laranja, tipografia Space Grotesk/Work Sans e o recorte esporte adaptado e saúde inclusiva. Completar as oito páginas planejadas e preservar `index.html` e `modalidades.html` como rotas iniciais, atualizando conteúdo, navegação e interações.
+Continuar o projeto recebido em HTML5/CSS3/JavaScript puros, sem framework e sem backend. Manter a marca AdaptSport, a paleta verde/laranja, tipografia Space Grotesk/Work Sans e o recorte esporte adaptado e saúde inclusiva. Completar as dez páginas do escopo e preservar `index.html` e `modalidades.html` como rotas iniciais, atualizando conteúdo, navegação e interações.
 
 As páginas são documentos estáticos independentes. `scripts/build_pages.py` centraliza menu, rodapé e conteúdo e gera as dez páginas HTML, cada uma com metadados, `aria-current`, landmarks e conteúdo próprio. O CSS em `assets/style.css` fornece variáveis e componentes comuns, com CSS Grid/Flexbox e breakpoints. O JavaScript fica em `assets/app.js` e `assets/a11y.js`. A versão de contato é deliberadamente demonstrativa: valida localmente, armazena o rascunho apenas no navegador e informa que não envia dados.
 
@@ -16,7 +16,7 @@ O site incorpora notícias externas atribuídas, fontes junto a estatísticas/pe
 - `assets/a11y.js`: fonte e contraste, com persistência local.
 - `assets/media/`: MP3, MP4, poster e arquivo WebVTT.
 - `assets/guia-esporte-adaptado.wav`: fonte de áudio para regenerar MP3/vídeo.
-- `scripts/build_pages.py`: gerador das dez páginas; editar conteúdo aqui e gerar de novo.
+- `scripts/build_pages.py`: gerador das páginas-base; `modalidades.html` recebeu uma melhoria interativa manual e não deve ser regenerada por esse script sem antes incorporar o diálogo e o `assets/modalidades.js`.
 - `scripts/build_media.py`: ferramenta de regeneração do áudio/vídeo, requer FFmpeg e Pillow.
 - `docs/`: escopo, fontes, orçamento, diário, plano de contexto, testes, antes/depois e passos de publicação.
 - `integrantes.txt`, `url-site.txt`, `repositorio.txt`: entregáveis textuais com os integrantes, a URL pública e o repositório confirmados.
