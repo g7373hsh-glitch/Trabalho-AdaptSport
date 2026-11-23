@@ -2,8 +2,10 @@
 // O guia rápido usa regras locais e respostas fixas; não é um modelo generativo.
 (function () {
   "use strict";
+  // Marca que o JavaScript está disponível para que o CSS possa ativar o menu responsivo.
   document.documentElement.classList.add("js");
 
+  // Espera o HTML terminar de carregar antes de procurar elementos e registrar eventos.
   document.addEventListener("DOMContentLoaded", function () {
     setupMobileMenu();
     setupModalitiesFilter();
@@ -11,12 +13,14 @@
     setupContactForm();
   });
 
+  // Controla abrir, fechar e atualizar o menu de navegação em telas pequenas.
   function setupMobileMenu() {
     var button = document.getElementById("nav-toggle");
     var navigation = document.getElementById("nav-menu");
     if (!button || !navigation) return;
 
     var mobileQuery = window.matchMedia("(max-width: 650px)");
+    // Sincroniza o estado visual do menu com a largura atual da janela.
     function syncLayout() {
       navigation.classList.toggle("is-collapsed", mobileQuery.matches);
       button.setAttribute("aria-expanded", String(!mobileQuery.matches));
@@ -46,6 +50,7 @@
     });
   }
 
+  // Filtra os cards de modalidades enquanto a pessoa digita no campo de busca.
   function setupModalitiesFilter() {
     var input = document.getElementById("busca-modalidade");
     var list = document.getElementById("lista-modalidades");
@@ -53,6 +58,7 @@
     if (!input || !list || !status) return;
 
     var items = Array.prototype.slice.call(list.querySelectorAll(".sport-card"));
+    // O evento input atualiza os resultados sem recarregar a página.
     input.addEventListener("input", function () {
       var term = normalize(input.value.trim());
       var visible = 0;
@@ -66,16 +72,19 @@
     });
   }
 
+  // Remove acentos e coloca o texto em minúsculas para facilitar a comparação.
   function normalize(value) {
     return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("pt-BR");
   }
 
+  // Configura o guia rápido, que responde usando regras locais e links internos.
   function setupQuickGuide() {
     var form = document.getElementById("guia-form");
     var input = document.getElementById("guia-pergunta");
     var answer = document.getElementById("guia-resposta");
     if (!form || !input || !answer) return;
 
+    // Cada regra relaciona palavras-chave a uma orientação e a uma página do projeto.
     var rules = [
       { terms: ["modalidade", "esporte", "goalball", "bocha", "natacao", "basquete"], text: "Veja os esportes disponíveis na página Modalidades e consulte o CPB para regras e classes atualizadas.", href: "modalidades.html" },
       { terms: ["praticar", "clube", "nucleo", "centro", "onde"], text: "A página Onde praticar reúne diretórios oficiais e perguntas para fazer antes de visitar um núcleo.", href: "onde-praticar.html" },
@@ -84,6 +93,8 @@
       { terms: ["contato", "formulario", "mensagem"], text: "O formulário de contato é uma demonstração local: ele valida e salva um rascunho neste navegador, mas não transmite mensagens.", href: "contato.html" }
     ];
 
+    // Intercepta o envio para responder na própria página, sem enviar dados externos.
+    // Valida todos os campos antes de concluir a simulação de envio.
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       var query = normalize(input.value.trim());
@@ -107,6 +118,7 @@
     });
   }
 
+  // Valida o formulário e salva um rascunho somente no localStorage do navegador.
   function setupContactForm() {
     var form = document.getElementById("form-contato");
     if (!form) return;
@@ -123,6 +135,7 @@
       dateField.min = localToday.toISOString().slice(0, 10);
     }
 
+    // Recupera o rascunho salvo anteriormente neste navegador.
     function readDraft() {
       try {
         var saved = JSON.parse(localStorage.getItem(storageKey) || "{}");
@@ -135,6 +148,7 @@
       }
     }
 
+    // Converte os campos em objeto e salva o rascunho localmente.
     function saveDraft() {
       var draft = {};
       fields.forEach(function (field) { draft[field.name] = field.value; });
@@ -146,6 +160,7 @@
       }
     }
 
+    // Traduz os erros nativos de validação HTML em mensagens em português.
     function errorFor(field) {
       if (!field.willValidate || field.validity.valid) return "";
       if (field.validity.valueMissing) return "Preencha este campo.";
@@ -157,6 +172,7 @@
       return "Confira o valor informado.";
     }
 
+    // Exibe a mensagem do campo e atualiza aria-invalid para acessibilidade.
     function showError(field) {
       var error = errorFor(field);
       var errorBox = document.getElementById("erro-" + field.id);

@@ -3,11 +3,13 @@
 (function () {
   "use strict";
 
+  // O elemento html recebe atributos que o CSS usa para alterar fonte e contraste.
   var root = document.documentElement;
   var sizes = ["normal", "grande", "maior"];
   var fontKey = "adaptsport-fontsize";
   var contrastKey = "adaptsport-contraste";
 
+  // Lê uma preferência do navegador; se o armazenamento falhar, usa o valor padrão.
   function read(key, fallback) {
     try {
       return localStorage.getItem(key) || fallback;
@@ -16,6 +18,7 @@
     }
   }
 
+  // Salva a preferência localmente sem enviar dados para um servidor.
   function write(key, value) {
     try {
       localStorage.setItem(key, value);
@@ -25,6 +28,7 @@
     }
   }
 
+  // Aplica as preferências salvas e atualiza o estado acessível dos botões.
   function applyState() {
     var size = read(fontKey, "normal");
     var contrast = read(contrastKey, "normal");
@@ -43,6 +47,7 @@
     if (contrastButton) contrastButton.setAttribute("aria-pressed", String(contrast === "alto"));
   }
 
+  // Só registra os cliques depois que os controles já existem no HTML.
   document.addEventListener("DOMContentLoaded", function () {
     applyState();
 

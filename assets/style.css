@@ -4,6 +4,7 @@
    ========================================================= */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap');
 
+/* Variáveis de cores, tipografia, medidas e espaçamentos usados pelo site. */
 :root {
   --ink: #12211C;
   --ink-soft: #3C4B44;
@@ -26,6 +27,7 @@
   --space-5: 4rem;
 }
 
+/* Tema de alto contraste ativado pelo arquivo a11y.js. */
 [data-contrast="alto"] {
   --ink: #000000;
   --ink-soft: #222222;
@@ -39,6 +41,7 @@
   --focus: #0000CC;
 }
 
+/* Reset básico e regras globais para elementos, foco, links e textos. */
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; font-size: 100%; }
 html[data-fontsize="grande"] { font-size: 118%; }
@@ -61,9 +64,11 @@ p { max-width: 68ch; margin: 0 0 var(--space-2); }
 ul, ol { padding-left: 1.35rem; }
 .container { width: min(100% - 2rem, var(--max-width)); margin-inline: auto; }
 
+/* Link invisível até receber foco: permite pular direto ao conteúdo. */
 .skip-link { position: absolute; z-index: 200; top: .5rem; left: -1000px; border-radius: 0 0 8px 0; background: var(--ink); color: #fff; padding: .8rem 1rem; font-weight: 700; }
 .skip-link:focus { left: .5rem; }
 
+/* Barra de acessibilidade com controles de fonte e contraste. */
 .a11y-bar { background: var(--ink); color: #fff; font-size: .88rem; }
 .a11y-bar__inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .5rem 1rem; padding-block: .45rem; }
 .a11y-bar__label { font-weight: 600; }
@@ -71,6 +76,7 @@ ul, ol { padding-left: 1.35rem; }
 .a11y-bar button { background: transparent; border: 1px solid #D7DED9; border-radius: 999px; color: #fff; padding: .3rem .75rem; cursor: pointer; font-size: .85rem; }
 .a11y-bar button:hover, .a11y-bar button[aria-pressed="true"] { background: var(--accent); color: #12211C; border-color: var(--accent); font-weight: 700; }
 
+/* Cabeçalho fixo e navegação principal compartilhada pelas páginas. */
 .site-header { position: sticky; top: 0; z-index: 100; background: var(--surface); border-bottom: 1px solid var(--line); box-shadow: 0 4px 12px #12211c0a; }
 .header-top { min-height: 4.2rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: .6rem; }
 .logo { display: inline-flex; align-items: center; gap: .6rem; color: var(--ink); text-decoration: none; font: 700 1.35rem/1 var(--font-display); white-space: nowrap; }
@@ -84,6 +90,7 @@ ul, ol { padding-left: 1.35rem; }
 .main-nav a[aria-current="page"] { border-bottom-color: var(--accent); color: var(--ink); }
 .nav-toggle { display: none; border: 2px solid var(--primary-dark); border-radius: 999px; background: var(--surface); color: var(--primary-dark); padding: .45rem .9rem; cursor: pointer; font-weight: 700; }
 
+/* Hero da página inicial: apresenta a proposta principal do AdaptSport. */
 .hero { overflow: hidden; background: var(--primary-soft); border-bottom: 1px solid var(--line); }
 .hero__layout { display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; gap: var(--space-4); padding-block: clamp(2.5rem, 6vw, 5rem); }
 .hero h1 { max-width: 16ch; }
@@ -98,6 +105,7 @@ ul, ol { padding-left: 1.35rem; }
 .btn-outline { border-color: var(--ink); background: transparent; color: var(--ink); }
 .btn-outline:hover { background: var(--ink); color: #fff; }
 
+/* Cabeçalho interno usado nas páginas secundárias. */
 .page-hero { background: var(--primary-soft); border-bottom: 1px solid var(--line); padding-block: clamp(2.4rem, 5vw, 4.2rem); }
 .page-hero h1 { max-width: 24ch; font-size: clamp(2.1rem, 4.5vw, 3.2rem); }
 .page-hero .lead { color: var(--ink-soft); max-width: 68ch; font-size: 1.08rem; }
@@ -106,6 +114,7 @@ ul, ol { padding-left: 1.35rem; }
 .section__head { max-width: 70ch; margin-bottom: var(--space-4); }
 .section__head p:last-child { margin-bottom: 0; }
 
+/* Grades reutilizáveis para estatísticas, cards e listas de verificação. */
 .stat-grid, .card-grid, .check-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-3); }
 .stat-card, .card, .check-card, .quote-card, .callout { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: var(--space-3); }
 .stat-card h3 { display: block; margin: 0 0 .2rem; color: var(--primary-dark); font: 700 clamp(1.8rem, 3vw, 2.5rem)/1.15 var(--font-display); }
@@ -127,10 +136,12 @@ ul, ol { padding-left: 1.35rem; }
 .page-map a { display: block; height: 100%; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); padding: .8rem; font-weight: 600; text-decoration: none; }
 .page-map a:hover { border-color: var(--primary); background: var(--primary-soft); }
 
+/* Área do filtro de modalidades e texto de quantidade de resultados. */
 .filter-bar { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .35rem .75rem; align-items: center; margin-bottom: 1rem; }
 .filter-bar label { grid-column: 1 / -1; font-weight: 700; }
 .filter-bar input { width: 100%; }
 .filter-bar p { margin: 0; font-size: .9rem; color: var(--ink-soft); }
+/* Grade dos oito cards de modalidades. */
 .sport-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; list-style: none; padding: 0; }
 .sport-card { display: grid; grid-template-columns: 3.5rem minmax(0, 1fr); gap: 1rem; align-items: start; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 1.15rem; }
 .sport-card[hidden] { display: none; }
@@ -154,6 +165,7 @@ ul, ol { padding-left: 1.35rem; }
 .quote-card blockquote { margin: 0 0 1rem; font: 600 1.12rem/1.55 var(--font-display); }
 .quote-card figcaption { color: var(--ink-soft); font-size: .9rem; }
 
+/* Componente do guia rápido com respostas baseadas em regras locais. */
 .quick-guide { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: var(--space-3); }
 .quick-guide label, .field label, .filter-bar label { display: block; font-weight: 700; }
 .inline-form { display: flex; gap: .55rem; margin: .35rem 0; }
@@ -161,6 +173,7 @@ ul, ol { padding-left: 1.35rem; }
 .quick-guide small { display: block; color: var(--ink-soft); }
 .guide-answer { min-height: 3.5rem; margin: 1rem 0 0; border-left: 4px solid var(--primary); padding: .6rem .8rem; background: var(--bg); }
 
+/* Layout da área de vídeo, áudio e transcrição. */
 .media-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: var(--space-4); align-items: start; }
 .media-player { display: block; width: 100%; border-radius: var(--radius); background: #101A16; }
 .video-embed { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: var(--radius); background: #12211C; }
@@ -169,6 +182,7 @@ ul, ol { padding-left: 1.35rem; }
 .transcript summary { cursor: pointer; font-weight: 700; }
 .transcript p { margin: .8rem 0 0; }
 
+/* Layout do formulário de contato e seus campos. */
 .form-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: var(--space-4); align-items: start; }
 .contact-form { display: grid; gap: 1rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: var(--space-3); }
 .form-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
@@ -182,6 +196,7 @@ ul, ol { padding-left: 1.35rem; }
 .form-status:not(:empty) { border-left: 4px solid var(--primary); padding-left: .7rem; }
 .form-actions .btn { min-height: 2.9rem; }
 
+/* Rodapé com navegação, acessibilidade e aviso acadêmico. */
 .site-footer { margin-top: var(--space-5); background: var(--primary-dark); color: #F2F7F4; padding-block: var(--space-4) var(--space-3); }
 .site-footer h2 { color: #fff; font-size: 1.12rem; }
 .site-footer p { color: #E2EEE7; }
@@ -192,6 +207,7 @@ ul, ol { padding-left: 1.35rem; }
 .footer-bottom { margin-top: var(--space-3); border-top: 1px solid #ffffff55; padding-top: 1rem; font-size: .85rem; }
 .footer-bottom p { margin-bottom: .35rem; }
 
+/* Ajustes para tablets e telas médias. */
 @media (max-width: 850px) {
   .hero__layout, .two-column, .form-layout, .media-grid { grid-template-columns: 1fr; }
   .hero-art { max-width: 300px; }
@@ -199,6 +215,7 @@ ul, ol { padding-left: 1.35rem; }
   .page-map { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .main-nav ul { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 }
+/* Ajustes para celulares, incluindo menu recolhível e uma coluna. */
 @media (max-width: 650px) {
   .container { width: min(100% - 1.25rem, var(--max-width)); }
   .header-top { min-height: 3.8rem; }
@@ -219,6 +236,7 @@ ul, ol { padding-left: 1.35rem; }
   .inline-form .btn { width: 100%; }
   .section { padding-block: 2.7rem; }
 }
+/* Respeita usuários que preferem reduzir animações. */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
@@ -248,3 +266,16 @@ ul, ol { padding-left: 1.35rem; }
   .hero-art { max-width: 420px; transform: none; }
 }
 .media-note { margin-top: .65rem; color: var(--ink-soft); font-size: .88rem; }
+
+/* Nome clicável da modalidade: abre o diálogo de detalhes. */
+.sport-title { margin: 0; padding: 0; border: 0; background: transparent; color: var(--ink); cursor: pointer; font: inherit; font-weight: 700; text-align: left; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: .16em; }
+.sport-title:hover, .sport-title:focus-visible { color: var(--primary-dark); text-decoration-color: var(--accent); }
+/* Janela nativa com explicação, vídeo do YouTube e fonte institucional. */
+dialog#modal-modalidade { width: min(92vw, 680px); max-height: 88vh; overflow: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); color: var(--ink); padding: 0; box-shadow: 0 24px 80px #12211c44; }
+dialog#modal-modalidade::backdrop { background: #12211c99; backdrop-filter: blur(3px); }
+.modalidade-dialog { position: relative; padding: clamp(1.4rem, 4vw, 2.5rem); }
+.modalidade-dialog h2 { margin-bottom: 1.25rem; }
+.modalidade-dialog h3 { margin-top: 1.35rem; margin-bottom: .35rem; font-size: 1.08rem; color: var(--primary-dark); }
+.modalidade-dialog__close { position: absolute; top: .8rem; right: .9rem; width: 2.2rem; height: 2.2rem; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); color: var(--ink); cursor: pointer; font-size: 1.45rem; line-height: 1; }
+.modalidade-dialog__links { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.4rem; }
+.modalidade-dialog__note { margin-top: 1.2rem; color: var(--ink-soft); font-size: .86rem; }
